@@ -229,3 +229,26 @@ for (let i = 1; i <= 5; i++) {
     handleClickFestival(`festivals-content-${i}`, `festivals-content-${i}-opened`);
 }
 
+document.getElementById("imgButton_1").addEventListener("click", function() {
+    document.getElementById("video_1").style.display = "block";
+});
+  
+document.getElementById("closeBtn_1").addEventListener("click", function() {
+    var video = document.querySelector("#video_1 video");
+    video.pause(); // Pause the video   
+    document.getElementById("video_1").style.display = "none";
+});
+
+
+document.getElementById("imgButton_2").addEventListener("click", function() {
+    document.getElementById("video_2").style.display = "block";
+});
+  
+document.getElementById("closeBtn_2").addEventListener("click", function() {
+    var video = document.querySelector("#video_2 video");
+    video.pause(); // Pause the video 
+    document.getElementById("video_2").style.display = "none";
+});
+
+
+ 

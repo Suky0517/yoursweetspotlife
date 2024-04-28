@@ -306,6 +306,43 @@ font-size: 1.7rem;
     opacity: 1;
 }
 
+.videoPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the width of the video popup as needed */
+    max-width: 800px; /* Set a maximum width for the video popup to prevent it from becoming too large */
+    height: auto; /* Allow the height of the video popup to adjust based on its content */
+    max-height: 80%; /* Set a maximum height for the video popup to maintain aspect ratio */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+  
+.videoContainer {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 100%; /* Ensure the video container does not exceed the width of its parent */
+    max-height: 100%; /* Ensure the video container does not exceed the height of its parent */
+    overflow: hidden; /* Hide any overflow content beyond the video container */
+}
+
+.videoContainer video {
+    width: 100%; /* Ensure the video takes up 100% of the width of the video container */
+    height: 100%; /* Ensure the video takes up 100% of the height of the video container */
+    object-fit: contain; /* Maintain aspect ratio and fit the video within the container */
+}
+
+
+.closeVideoBtn {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+}
+
 .footer{
     text-align: center;
 }
